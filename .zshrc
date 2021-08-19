@@ -16,7 +16,10 @@ export PATH=$PATH:$ANDROID_SDK/platform-tools
 export PATH=$PATH:$ANDROID_SDK/emulator
 
 # nodenv
-eval "$(nodenv init -)"
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Altruist
 alias alt-config="source /etc/altruist/config"

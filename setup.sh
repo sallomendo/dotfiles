@@ -2,6 +2,8 @@ brew install zsh
 brew install antigen
 brew install nodenv
 brew install yarn
+brew install rbenv
+brew install ruby-build
 
 brew install --cask iterm2
 brew install --cask 1password
